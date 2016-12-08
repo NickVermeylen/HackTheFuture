@@ -41,10 +41,11 @@ class repeatedDigits extends Controller
                     "solution" => $result,
                 ]
             ]);
+            
+            return ["challenge" => $input, "solution" => $result,];
         }
         else
         {
-            Log::info("SuccesMessage: ". $request->success);
             return $request->success;
         }
     }

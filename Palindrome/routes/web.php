@@ -18,3 +18,5 @@
     Route::get("repeatedDigits","repeatedDigits@index");
     Route::post("digitsResult","repeatedDigits@value");
     Route::get("digitsResult","repeatedDigits@value");
+    
+    Route::get("nanoSays/{id}","nanoSaysController@index");
