@@ -13,7 +13,7 @@ class nanoSaysController extends Controller
         $client = new Client(['timeout'  => 2.0]);
     
         $res = $client->request('PUT', $url,
-            [ 'json' => ["data" => [ "code" => "sample :loop_amen, start: 1, finish: 0.02, attack: 5, rate: 0.5\n" ]]]
+            [ 'json' => ["data" => [ "code" => "live_loop :bass do\n  synth :prophet, note: :e1, release: 4, cutoff: 120, cutoff_attack: 1\n  sleep 4\nend\n" ]]]
         );
         
         dd($res);
