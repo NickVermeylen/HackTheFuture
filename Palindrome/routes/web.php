@@ -20,3 +20,6 @@
     Route::get("digitsResult","repeatedDigits@value");
     
     Route::get("nanoSays/{id}","nanoSaysController@index");
+    
+    Route::get("longestSeq","longestSeqController@index");
+    Route::post("longestSeqData", "longestSeqController@data");
